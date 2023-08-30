@@ -13,6 +13,7 @@
 		F9ACD79B2A9F9B450005A39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7992A9F9B450005A39A /* Main.storyboard */; };
 		F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD79C2A9F9B480005A39A /* Assets.xcassets */; };
 		F9ACD7A02A9F9B480005A39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD79E2A9F9B480005A39A /* LaunchScreen.storyboard */; };
+		F9ACD7A92A9FA7950005A39A /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = F9ACD7A82A9FA7950005A39A /* SwiftyDropbox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9ACD7A92A9FA7950005A39A /* SwiftyDropbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "dropbox-client";
+			packageProductDependencies = (
+				F9ACD7A82A9FA7950005A39A /* SwiftyDropbox */,
+			);
 			productName = "dropbox-client";
 			productReference = F9ACD7902A9F9B450005A39A /* dropbox-client.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F9ACD7872A9F9B450005A39A;
+			packageReferences = (
+				F9ACD7A72A9FA7940005A39A /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
+			);
 			productRefGroup = F9ACD7912A9F9B450005A39A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9ACD7A72A9FA7940005A39A /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9ACD7A82A9FA7950005A39A /* SwiftyDropbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9ACD7A72A9FA7940005A39A /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;
+			productName = SwiftyDropbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9ACD7882A9F9B450005A39A /* Project object */;
 }
