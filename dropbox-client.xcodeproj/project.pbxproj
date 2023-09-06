@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F9ACD7942A9F9B450005A39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7932A9F9B450005A39A /* AppDelegate.swift */; };
 		F9ACD7962A9F9B450005A39A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7952A9F9B450005A39A /* SceneDelegate.swift */; };
-		F9ACD7982A9F9B450005A39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7972A9F9B450005A39A /* ViewController.swift */; };
-		F9ACD79B2A9F9B450005A39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7992A9F9B450005A39A /* Main.storyboard */; };
 		F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD79C2A9F9B480005A39A /* Assets.xcassets */; };
 		F9ACD7A02A9F9B480005A39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD79E2A9F9B480005A39A /* LaunchScreen.storyboard */; };
 		F9ACD7A92A9FA7950005A39A /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = F9ACD7A82A9FA7950005A39A /* SwiftyDropbox */; };
@@ -20,8 +18,6 @@
 		F9ACD7902A9F9B450005A39A /* dropbox-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dropbox-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ACD7932A9F9B450005A39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9ACD7952A9F9B450005A39A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9ACD7972A9F9B450005A39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9ACD79A2A9F9B450005A39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9ACD79C2A9F9B480005A39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9ACD79F2A9F9B480005A39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9ACD7A12A9F9B480005A39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,8 +56,6 @@
 			children = (
 				F9ACD7932A9F9B450005A39A /* AppDelegate.swift */,
 				F9ACD7952A9F9B450005A39A /* SceneDelegate.swift */,
-				F9ACD7972A9F9B450005A39A /* ViewController.swift */,
-				F9ACD7992A9F9B450005A39A /* Main.storyboard */,
 				F9ACD79C2A9F9B480005A39A /* Assets.xcassets */,
 				F9ACD79E2A9F9B480005A39A /* LaunchScreen.storyboard */,
 				F9ACD7A12A9F9B480005A39A /* Info.plist */,
@@ -135,7 +129,6 @@
 			files = (
 				F9ACD7A02A9F9B480005A39A /* LaunchScreen.storyboard in Resources */,
 				F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */,
-				F9ACD79B2A9F9B450005A39A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9ACD7982A9F9B450005A39A /* ViewController.swift in Sources */,
 				F9ACD7942A9F9B450005A39A /* AppDelegate.swift in Sources */,
 				F9ACD7962A9F9B450005A39A /* SceneDelegate.swift in Sources */,
 			);
@@ -155,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F9ACD7992A9F9B450005A39A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9ACD79A2A9F9B450005A39A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F9ACD79E2A9F9B480005A39A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,7 +284,6 @@
 				INFOPLIST_FILE = "dropbox-client/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -332,7 +315,6 @@
 				INFOPLIST_FILE = "dropbox-client/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
