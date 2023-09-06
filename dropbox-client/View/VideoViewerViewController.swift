@@ -33,7 +33,7 @@ final class VideoViewerViewController: UIViewController {
         
         bind(to: viewModel)
         viewModel.viewDidLoad()
-        viewModel.getContentLink()
+        viewModel.fetchData()
     }
     
     override func didReceiveMemoryWarning() {

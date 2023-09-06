@@ -22,7 +22,7 @@ extension Files.Metadata {
 }
 
 extension Files.FileMetadata {
-    func toFileMetadata() -> Metadata {
+    func toFileMetadata() -> FileMetadata {
         
         let result = FileMetadata(name: name,
                             pathLower: pathLower,

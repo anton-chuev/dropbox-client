@@ -46,7 +46,7 @@ final class EntryCellViewModel {
                 let fileMetadataDTO: Files.FileMetadata = previewResultAndData.0
                 
                 // Update file from FolderContentViewModel
-                let receivedFileMetadata = fileMetadataDTO.toFileMetadata() as! FileMetadata
+                let receivedFileMetadata = fileMetadataDTO.toFileMetadata()
                 fileMetadata.mediaMetadata = receivedFileMetadata.mediaMetadata
 
                 let data = previewResultAndData.1

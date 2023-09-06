@@ -9,11 +9,11 @@ import Foundation
 import SwiftyDropbox
 
 protocol ContentLinkService {
-    func getContentLink(of entry: Metadata, completion: @escaping (Files.GetTemporaryLinkResult?, CallError<Files.GetTemporaryLinkError>?) -> Void)
+    func getContentLink(of entry: FileMetadata, completion: @escaping (Files.GetTemporaryLinkResult?, CallError<Files.GetTemporaryLinkError>?) -> Void)
 }
 
 struct DefaultContentLinkService: ContentLinkService {    
-    func getContentLink(of entry: Metadata, completion: @escaping (Files.GetTemporaryLinkResult?, CallError<Files.GetTemporaryLinkError>?) -> Void) {
+    func getContentLink(of entry: FileMetadata, completion: @escaping (Files.GetTemporaryLinkResult?, CallError<Files.GetTemporaryLinkError>?) -> Void) {
         
         guard let path = entry.pathLower else { return }
         

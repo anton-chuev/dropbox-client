@@ -9,14 +9,14 @@ import Foundation
 import Alamofire
 
 protocol VideoDownloadService {
-    func downloadVideo(from url: URL, completion: @escaping (URL?, Error?) -> Void)
+    func downloadVideo(from url: URL, completion: @escaping (URL?) -> Void)
 }
 
 class DefaultVideoDownloadService: VideoDownloadService {
     
-    func downloadVideo(from url: URL, completion: @escaping (URL?, Error?) -> Void) {
+    func downloadVideo(from url: URL, completion: @escaping (URL?) -> Void) {
         let task = URLSession.shared.downloadTask(with: url) { (tempFileURL, response, error) in
-            completion(tempFileURL, error)
+            completion(tempFileURL)
         }
         task.resume()
     }

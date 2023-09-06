@@ -34,11 +34,21 @@ final class VideoViewerViewModel: NSObject {
         self.videoCache = videoCache
     }
     
+    // MARK: - Intentions
     func viewDidLoad() {
         entryInfo.value = EntryPrettyInfoStringComposer.prettyString(from: entry)
     }
     
-    func getContentLink() {
+    func fetchData() {
+        getContentLink()
+    }
+    
+    func cleanVideoCache() {
+        videoCache.removeAllVideos()
+    }
+    
+    // MARK: - Private
+    private func getContentLink() {
         
         let cacheURL = VideoCacheURLComposer.cacheURL(for: entry, cache: videoCache)
         if
@@ -78,22 +88,16 @@ final class VideoViewerViewModel: NSObject {
         }
     }
     
-    func setupPlayer(from url: URL) {
+    private func setupPlayer(from url: URL) {
         let asset = AVAsset(url: url)
         playerItem.value = AVPlayerItem(asset: asset)
         playerItem.value?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: [.old, .new], context: &self.playerItemContext)
     }
     
-    func cleanVideoCache() {
-        videoCache.removeAllVideos()
-    }
-    
-    func dowloadVideo(for entry: FileMetadata, from url: URL) {
+    private func dowloadVideo(for entry: FileMetadata, from url: URL) {
         // Let service finish file downloading even if screen was closed
-        videoDownloadService.downloadVideo(from: url) { tempFileURL, error in
-            if let error = error {
-                print(error)
-            } else if let tempFileURL = tempFileURL {
+        videoDownloadService.downloadVideo(from: url) { tempFileURL in
+            if let tempFileURL = tempFileURL {
                 let localURL = VideoCacheURLComposer.cacheURL(for: self.entry, cache: self.videoCache)
                 self.videoCache.insertVideo(to: localURL, from: tempFileURL)
             }
