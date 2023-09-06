@@ -45,7 +45,33 @@
 		F9ACD80D2AA75D390005A39A /* VideoViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD80B2AA75D390005A39A /* VideoViewerViewController.xib */; };
 		F9ACD80F2AA75D940005A39A /* VideoViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD80E2AA75D940005A39A /* VideoViewerViewModel.swift */; };
 		F9BFEAC32AA7751C001E7E73 /* VideoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAC22AA7751C001E7E73 /* VideoCache.swift */; };
+		F9BFEAD52AA8BDDF001E7E73 /* FolderContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */; };
+		F9BFEAD82AA8BE84001E7E73 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */; };
+		F9BFEADE2AA8C2B9001E7E73 /* AuthServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */; };
+		F9BFEAE02AA8C718001E7E73 /* FolderContentServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */; };
+		F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */; };
+		F9BFEAE72AA8C93C001E7E73 /* Files.Metadata+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */; };
+		F9BFEAE92AA8DA31001E7E73 /* LogoutServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */; };
+		F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */; };
+		F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */; };
+		F9BFEAEF2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */; };
+		F9BFEAF12AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */; };
+		F9BFEAF32AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */; };
+		F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */; };
+		F9F97C622AA9023000F12F9D /* VideoViewerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */; };
+		F9F97C642AA902AA00F12F9D /* VideoDownloadServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */; };
+		F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9BFEACF2AA8BCAC001E7E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9ACD7882A9F9B450005A39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9ACD78F2A9F9B450005A39A;
+			remoteInfo = "dropbox-client";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F9ACD7902A9F9B450005A39A /* dropbox-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dropbox-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +113,23 @@
 		F9ACD80B2AA75D390005A39A /* VideoViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewerViewController.xib; sourceTree = "<group>"; };
 		F9ACD80E2AA75D940005A39A /* VideoViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewerViewModel.swift; sourceTree = "<group>"; };
 		F9BFEAC22AA7751C001E7E73 /* VideoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCache.swift; sourceTree = "<group>"; };
+		F9BFEACB2AA8BCAC001E7E73 /* dropbox-clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dropbox-clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentViewModelTests.swift; sourceTree = "<group>"; };
+		F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.ListFolderResult+Stub.swift"; sourceTree = "<group>"; };
+		F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.Metadata+Stub.swift"; sourceTree = "<group>"; };
+		F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByIDMock.swift; sourceTree = "<group>"; };
+		F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewModelTests.swift; sourceTree = "<group>"; };
+		F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLinkServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.GetTemporaryLinkResult+Stub.swift"; sourceTree = "<group>"; };
+		F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataDownloadServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByURLMock.swift; sourceTree = "<group>"; };
+		F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewerViewModelTests.swift; sourceTree = "<group>"; };
+		F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDownloadServiceMock.swift; sourceTree = "<group>"; };
+		F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +141,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9BFEAC82AA8BCAC001E7E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9A9EC082AA90CDD006BD16A /* ViewModel Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */,
+				F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */,
+				F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */,
+				F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */,
+			);
+			path = "ViewModel Tests";
+			sourceTree = "<group>";
+		};
 		F9ACD7872A9F9B450005A39A = {
 			isa = PBXGroup;
 			children = (
 				F9ACD7922A9F9B450005A39A /* dropbox-client */,
+				F9BFEACC2AA8BCAC001E7E73 /* dropbox-clientTests */,
 				F9ACD7912A9F9B450005A39A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F9ACD7902A9F9B450005A39A /* dropbox-client.app */,
+				F9BFEACB2AA8BCAC001E7E73 /* dropbox-clientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +273,42 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		F9BFEACC2AA8BCAC001E7E73 /* dropbox-clientTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFEAE12AA8C83F001E7E73 /* Stub */,
+				F9BFEAD62AA8BE5E001E7E73 /* Mock */,
+				F9A9EC082AA90CDD006BD16A /* ViewModel Tests */,
+			);
+			path = "dropbox-clientTests";
+			sourceTree = "<group>";
+		};
+		F9BFEAD62AA8BE5E001E7E73 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */,
+				F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */,
+				F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */,
+				F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */,
+				F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */,
+				F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */,
+				F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */,
+				F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */,
+				F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F9BFEAE12AA8C83F001E7E73 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */,
+				F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */,
+				F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +332,24 @@
 			productReference = F9ACD7902A9F9B450005A39A /* dropbox-client.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F9BFEACA2AA8BCAC001E7E73 /* dropbox-clientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BFEAD32AA8BCAC001E7E73 /* Build configuration list for PBXNativeTarget "dropbox-clientTests" */;
+			buildPhases = (
+				F9BFEAC72AA8BCAC001E7E73 /* Sources */,
+				F9BFEAC82AA8BCAC001E7E73 /* Frameworks */,
+				F9BFEAC92AA8BCAC001E7E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9BFEAD02AA8BCAC001E7E73 /* PBXTargetDependency */,
+			);
+			name = "dropbox-clientTests";
+			productName = "dropbox-clientTests";
+			productReference = F9BFEACB2AA8BCAC001E7E73 /* dropbox-clientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +362,10 @@
 				TargetAttributes = {
 					F9ACD78F2A9F9B450005A39A = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					F9BFEACA2AA8BCAC001E7E73 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F9ACD78F2A9F9B450005A39A;
 					};
 				};
 			};
@@ -265,6 +386,7 @@
 			projectRoot = "";
 			targets = (
 				F9ACD78F2A9F9B450005A39A /* dropbox-client */,
+				F9BFEACA2AA8BCAC001E7E73 /* dropbox-clientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +403,13 @@
 				F9ACD7DC2AA1DCAD0005A39A /* LoginViewController.xib in Resources */,
 				F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */,
 				F9ACD7C22AA0A2FF0005A39A /* FolderContentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BFEAC92AA8BCAC001E7E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +453,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9BFEAC72AA8BCAC001E7E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BFEAF12AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift in Sources */,
+				F9BFEAF32AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift in Sources */,
+				F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */,
+				F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */,
+				F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */,
+				F9BFEAD82AA8BE84001E7E73 /* LoginViewModelTests.swift in Sources */,
+				F9BFEAD52AA8BDDF001E7E73 /* FolderContentViewModelTests.swift in Sources */,
+				F9F97C642AA902AA00F12F9D /* VideoDownloadServiceMock.swift in Sources */,
+				F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */,
+				F9BFEAE02AA8C718001E7E73 /* FolderContentServiceMock.swift in Sources */,
+				F9BFEAEF2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift in Sources */,
+				F9BFEAE92AA8DA31001E7E73 /* LogoutServiceMock.swift in Sources */,
+				F9BFEADE2AA8C2B9001E7E73 /* AuthServiceMock.swift in Sources */,
+				F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */,
+				F9F97C622AA9023000F12F9D /* VideoViewerViewModelTests.swift in Sources */,
+				F9BFEAE72AA8C93C001E7E73 /* Files.Metadata+Stub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9BFEAD02AA8BCAC001E7E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9ACD78F2A9F9B450005A39A /* dropbox-client */;
+			targetProxy = F9BFEACF2AA8BCAC001E7E73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F9ACD79E2A9F9B480005A39A /* LaunchScreen.storyboard */ = {
@@ -514,6 +674,44 @@
 			};
 			name = Release;
 		};
+		F9BFEAD12AA8BCAC001E7E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VG29NU3JGS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.chuiev.dropbox-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dropbox-client.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dropbox-client";
+			};
+			name = Debug;
+		};
+		F9BFEAD22AA8BCAC001E7E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VG29NU3JGS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.chuiev.dropbox-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dropbox-client.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dropbox-client";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,6 +729,15 @@
 			buildConfigurations = (
 				F9ACD7A52A9F9B480005A39A /* Debug */,
 				F9ACD7A62A9F9B480005A39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BFEAD32AA8BCAC001E7E73 /* Build configuration list for PBXNativeTarget "dropbox-clientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BFEAD12AA8BCAC001E7E73 /* Debug */,
+				F9BFEAD22AA8BCAC001E7E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
