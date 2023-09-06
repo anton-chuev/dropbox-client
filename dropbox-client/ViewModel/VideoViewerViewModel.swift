@@ -37,6 +37,7 @@ final class VideoViewerViewModel: NSObject {
     // MARK: - Intentions
     func viewDidLoad() {
         entryInfo.value = EntryPrettyInfoStringComposer.prettyString(from: entry)
+        isLoading.value = true
     }
     
     func fetchData() {
@@ -58,8 +59,6 @@ final class VideoViewerViewModel: NSObject {
             setupPlayer(from: alreadyCachedURL)
             return
         }
-        
-        isLoading.value = true
         
         contentLinkService.getContentLink(of: entry) { [weak self] result, error in
             if let error = error {
