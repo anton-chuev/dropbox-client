@@ -6,17 +6,47 @@
 //
 
 import UIKit
+import SwiftyDropbox
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    private var coordinator: MainCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let navController = UINavigationController()
+        coordinator = MainCoordinator(navigationController: navController)
+        coordinator?.start()
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        let oauthCompletion: DropboxOAuthCompletion = { [weak self] result in
+            if let authResult = result {
+                switch authResult {
+                case .success:
+                    print("Success! User is logged into DropboxClientsManager.")
+                    self?.coordinator?.showRootFolderContent()
+                case .cancel:
+                    self?.coordinator?.showAlert(title: nil, message: "Authorization flow was manually canceled by user!")
+                case .error(_, let description):
+                    self?.coordinator?.showAlert(title: nil, message: "Error: \(String(describing: description))")
+                }
+            }
+        }
+        
+        for context in URLContexts {
+            // stop iterating after the first handle-able url
+            if DropboxClientsManager.handleRedirectURL(context.url, completion: oauthCompletion) {
+                break
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
