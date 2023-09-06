@@ -57,7 +57,7 @@ extension VideoCache: VideoCacheType {
 }
 
 private extension VideoCache {
-    static private let maxLifetime: TimeInterval = 5//60*60*24
+    static private let maxLifetime: TimeInterval = 60*60*24
     
     func cleanOldFiles() {
         guard let urlArray =
