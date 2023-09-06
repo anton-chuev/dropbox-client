@@ -54,7 +54,6 @@ final class ImageViewerViewModel {
             let url = URL(string: link),
             let image = imageCache[url]
         {
-            print("Get image from cache for \(link)")
             image.prepareForDisplay { [weak self] decodedImage in
                 self?.image.value = decodedImage
                 self?.isLoading.value = false

@@ -36,7 +36,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if let authResult = result {
                 switch authResult {
                 case .success:
-                    print("Success! User is logged into DropboxClientsManager.")
                     self?.coordinator?.showRootFolderContent()
                 case .cancel:
                     self?.coordinator?.showAlert(title: nil, message: "Authorization flow was manually canceled by user!")

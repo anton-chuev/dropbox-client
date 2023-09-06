@@ -169,26 +169,8 @@ extension FolderContentViewController: UITableViewDelegate {
         if let file = entry as? FileMetadata {
             coordinator?.entryViewer(file)
         } else if let folder = entry as? FolderMetadata {
-            print("Should show folder content")
-        }
-//        let entry = viewModel.entries.value[indexPath.row]
-//        coordinator?.entryDetails(entry)
-//        showPlayer()
-    }
-    
-}
-
-private extension FolderContentViewController {
-    
-    private func showPlayer() {
-        let video = "https://ucb2c283762843a12c63ff940dd0.dl.dropboxusercontent.com/cd/0/get/CC67Ylbpt5gOKdH0t7ZENp61rm_DjrNcWTHuLZZpETQ8utkpd_MZ59EibMoN-tv1A6zXvxjUf-jQN_va4OXjmQIErtgcrYQI7wCYpSP-72HI38enfAN4L_XCMS-X0kaEr2sypMC5V7yc2MFD8adk-PD0VSgqij8ESXB7qEFUqsTMhA/file"
-        let videoPlayer = AVPlayer(url: URL(string: video)!)
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = videoPlayer
-        self.present(playerViewController, animated: true) {
-            if let player = playerViewController.player {
-                player.play()
-            }
+            // TODO: Show selected folder's content
         }
     }
+    
 }

@@ -60,8 +60,6 @@ extension Files.MediaInfo {
     func toMediaMetadata() -> MediaMetadata? {
         var mediaMetadata: MediaMetadata?
         switch self {
-        case .pending:
-            print("Pending")
         case .metadata(let metadata):
             switch metadata {
             case let videoMetadata as Files.VideoMetadata:
@@ -83,6 +81,7 @@ extension Files.MediaInfo {
                 mediaMetadata = PhotoMetadata(location: coordinates, dimensions: dimensions, timestamp: photoMetadata.timeTaken)
             default: break
             }
+        case .pending: break
         }
         
         return mediaMetadata

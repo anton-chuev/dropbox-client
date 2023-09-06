@@ -36,7 +36,6 @@ final class EntryCellViewModel {
         { return }
         
         if let image = thumbnailCache[fileMetadata.id] {
-            print("Image from cache for \(fileMetadata.id)")
             self.imageData.value = image.pngData()
             return
         }

@@ -55,7 +55,6 @@ final class VideoViewerViewModel: NSObject {
         if
             let alreadyCachedURL = videoCache.video(for: cacheURL)
         {
-            print("Get video from cache for \(self.entry.name)")
             setupPlayer(from: alreadyCachedURL)
             return
         }
@@ -122,12 +121,11 @@ final class VideoViewerViewModel: NSObject {
             // TODO: React on all statuses
             switch status {
             case .readyToPlay:
-                print(".readyToPlay")
                 isReadyToPlayVideo.value = true
                 isLoading.value = false
-            case .failed: print(".failed")
-            case .unknown: print(".unknown")
-            @unknown default: print("@unknown default")
+            case .failed: fallthrough
+            case .unknown: fallthrough
+            @unknown default: break
             }
         }
     }
@@ -145,7 +143,6 @@ fileprivate struct VideoCacheURLComposer {
             filename = (nameComponents.first ?? "") + "_" + hash + "." + nameComponents.last!
         }
         let url = cache.videoCacheDirectory.appendingPathComponent(filename)
-        print("Local URL for caching \(entry.name) is \(url.path)")
         return url
     }
 }
