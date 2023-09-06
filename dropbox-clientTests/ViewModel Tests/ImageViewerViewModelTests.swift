@@ -76,26 +76,29 @@ final class ImageViewerViewModelTests: XCTestCase {
     }
     
     func test_download_image_should_succeed() {
-        XCTAssertNil(vm.imageData.value)
+        XCTAssertNil(vm.image.value)
         
         vm.fetchData()
         contentLinkService.getContentLinkSuccess()
         
         imageDataDownloadService.imageDataDownloadSuccess()
         
-        XCTAssertNotNil(vm.imageData.value)
+        let predicate = NSPredicate { _, _ in self.vm.image.value != nil }
+        expectation(for: predicate, evaluatedWith: vm.image, handler: nil)
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertNotNil(vm.image.value)
     }
     
     func test_download_image_should_fail() {
         XCTAssertNil(vm.errorMessage.value)
-        XCTAssertNil(vm.imageData.value)
+        XCTAssertNil(vm.image.value)
         
         vm.fetchData()
         contentLinkService.getContentLinkSuccess()
         
         imageDataDownloadService.imageDataDownloadFail(error: nil)
         
-        XCTAssertNil(vm.imageData.value)
+        XCTAssertNil(vm.image.value)
         XCTAssertNotNil(vm.errorMessage.value)
     }
     

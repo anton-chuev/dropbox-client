@@ -13,7 +13,7 @@ final class ImageViewerViewModel {
     // MARK: - Observables
     private(set) var errorMessage = Observable<String?>(nil)
     private(set) var isLoading = Observable<Bool>(false)
-    private(set) var imageData = Observable<Data?>(nil)
+    private(set) var image = Observable<UIImage?>(nil)
     private(set) var entryInfo = Observable<String?>(nil)
     
     // MARK: - Private properties
@@ -35,6 +35,7 @@ final class ImageViewerViewModel {
     // MARK: - Intentions
     func viewDidLoad() {
         entryInfo.value = EntryPrettyInfoStringComposer.prettyString(from: entry)
+        isLoading.value = true
     }
     
     func fetchData() {
@@ -54,11 +55,13 @@ final class ImageViewerViewModel {
             let image = imageCache[url]
         {
             print("Get image from cache for \(link)")
-            imageData.value = image.pngData()
+            image.prepareForDisplay { [weak self] decodedImage in
+                self?.image.value = decodedImage
+                self?.isLoading.value = false
+            }
             return
         }
         
-        isLoading.value = true
         
         contentLinkService.getContentLink(of: entry) { [weak self] result, error in
             if let error = error {
@@ -75,18 +78,22 @@ final class ImageViewerViewModel {
     private func downloadImageData(from link: String) {
         guard let url = URL(string: link) else {
             isLoading.value = false
-            imageData.value = nil
+            image.value = nil
             return
         }
         
         imageDataDownloadService.downloadData(from: url) { [weak self] data in
-            self?.isLoading.value = false
             if let data = data {
+                UIImage(data: data)?.prepareForDisplay { decodedImage in
+                    self?.image.value = decodedImage
+                    self?.isLoading.value = false
+                }
+                
                 self?.cacheImageData(data, for: url)
-                self?.imageData.value = data
             } else {
                 // TODO: Add proper error handling
                 self?.errorMessage.value = "Failed loading image"
+                self?.isLoading.value = false
             }
         }
     }

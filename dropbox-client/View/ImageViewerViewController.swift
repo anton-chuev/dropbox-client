@@ -30,6 +30,10 @@ final class ImageViewerViewController: UIViewController {
         
         bind(to: viewModel)
         viewModel.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         viewModel.fetchData()
     }
     
@@ -52,8 +56,8 @@ final class ImageViewerViewController: UIViewController {
             }
         }
         
-        viewModel.imageData.bind { [weak self] data in
-            guard let data = data, let image = UIImage(data: data) else { return }
+        viewModel.image.bind { [weak self] image in
+            guard let image = image else { return }
             DispatchQueue.main.async {
                 self?.image.image = image
             }
