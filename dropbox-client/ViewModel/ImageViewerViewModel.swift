@@ -17,12 +17,12 @@ final class ImageViewerViewModel {
     private(set) var entryInfo = Observable<String?>(nil)
     
     // MARK: - Private properties
-    private var entry: Metadata
+    private var entry: FileMetadata
     private var contentLinkService: ContentLinkService
     private var imageDataDownloadService: ImageDataDownloadService
     private var imageCache: ImageCacheByURLType
     
-    init(entry: Metadata,
+    init(entry: FileMetadata,
          contentLinkService: ContentLinkService,
          imageDataDownloadService: ImageDataDownloadService,
          imageCache: ImageCacheByURLType) {
@@ -49,7 +49,7 @@ final class ImageViewerViewModel {
     // MARK: - Private
     private func getContentLink() {
         if
-            let link = (entry as? FileMetadata)?.contentLink,
+            let link = entry.contentLink,
             let url = URL(string: link),
             let image = imageCache[url]
         {
@@ -66,7 +66,7 @@ final class ImageViewerViewModel {
                 self?.errorMessage.value = error.description
             } else if let result = result {
                 // Update entry using reference semantic
-                (self?.entry as? FileMetadata)?.contentLink = result.link
+                self?.entry.contentLink = result.link
                 self?.downloadImageData(from: result.link)
             }
         }
