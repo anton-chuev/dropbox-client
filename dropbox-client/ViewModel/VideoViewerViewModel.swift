@@ -63,7 +63,7 @@ final class VideoViewerViewModel: NSObject {
         
         contentLinkService.getContentLink(of: entry) { [weak self] result, error in
             if let error = error {
-                // TODO: create more user-friendly error message depending on error type
+                // TODO: Add proper error handling
                 self?.isLoading.value = false
                 self?.errorMessage.value = error.description
             } else if let result = result, let strongSelf = self {

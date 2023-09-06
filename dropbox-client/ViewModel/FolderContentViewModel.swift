@@ -52,6 +52,7 @@ final class FolderContentViewModel {
         if let cursor = cursor {
             fetchService.continueFetchingContent(from: cursor) { [weak self] response, error in
                 if let error = error {
+                    // TODO: Add proper error handling
                     self?.fetchFailed(error)
                 } else if let response = response {
                     self?.fetchCompleted(response)
@@ -62,6 +63,7 @@ final class FolderContentViewModel {
             fetchService.fetchContent(at: currentPath, limit: pageLimit) { [weak self] response, error in
                 self?.firstPageIsLoading.value = false
                 if let error = error {
+                    // TODO: Add proper error handling
                     self?.fetchFailed(error)
                 } else if let response = response {
                     self?.fetchCompleted(response)

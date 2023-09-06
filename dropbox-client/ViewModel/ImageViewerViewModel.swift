@@ -62,7 +62,7 @@ final class ImageViewerViewModel {
         
         contentLinkService.getContentLink(of: entry) { [weak self] result, error in
             if let error = error {
-                // TODO: create more user-friendly error message depending on error type
+                // TODO: Add proper error handling
                 self?.errorMessage.value = error.description
             } else if let result = result {
                 // Update entry using reference semantic
@@ -85,6 +85,7 @@ final class ImageViewerViewModel {
                 self?.cacheImageData(data, for: url)
                 self?.imageData.value = data
             } else {
+                // TODO: Add proper error handling
                 self?.errorMessage.value = "Failed loading image"
             }
         }

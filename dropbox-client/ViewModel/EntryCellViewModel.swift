@@ -42,6 +42,7 @@ final class EntryCellViewModel {
         }
         
         thumbnailService.thumbnail(for: path) { [weak self] previewResultAndData, error in
+            // TODO: Add proper error handling
             if let previewResultAndData = previewResultAndData {
                 let fileMetadataDTO: Files.FileMetadata = previewResultAndData.0
                 
