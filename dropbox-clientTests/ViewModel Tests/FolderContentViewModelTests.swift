@@ -14,13 +14,13 @@ final class FolderContentViewModelTests: XCTestCase {
     var fetchService: FolderContentServiceMock!
     var deleteEntryService: DeleteEntryServiceMock!
     var signOutService: SignOutServiceMock!
-    var thumbnailsCache: ImageCacheByIDMock!
+    var thumbnailsCache: ImageCacheByIDDummy!
     
     override func setUp() {
         fetchService = FolderContentServiceMock()
         deleteEntryService = DeleteEntryServiceMock()
         signOutService = SignOutServiceMock()
-        thumbnailsCache = ImageCacheByIDMock()
+        thumbnailsCache = ImageCacheByIDDummy()
         vm = FolderContentViewModel(fetchService: fetchService,
                                     deleteEntryService: deleteEntryService,
                                     signOutService: signOutService,

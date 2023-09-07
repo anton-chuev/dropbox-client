@@ -1,5 +1,5 @@
 //
-//  ImageCacheByURLMock.swift
+//  ImageCacheByURLDummy.swift
 //  dropbox-clientTests
 //
 //  Created by Anton Chuev on 06.09.2023.
@@ -10,7 +10,7 @@ import Foundation
 @testable import dropbox_client
 import UIKit
 
-final class ImageCacheByURLMock: ImageCacheByURLType {
+final class ImageCacheByURLDummy: ImageCacheByURLType {
     
     func image(for url: URL) -> UIImage? {
         return nil

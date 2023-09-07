@@ -55,15 +55,15 @@
 		F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */; };
 		F9BFEAE72AA8C93C001E7E73 /* Files.Metadata+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */; };
 		F9BFEAE92AA8DA31001E7E73 /* SignOutServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */; };
-		F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */; };
+		F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDDummy.swift */; };
 		F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */; };
 		F9BFEAEF2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */; };
 		F9BFEAF12AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */; };
 		F9BFEAF32AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */; };
-		F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */; };
+		F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLDummy.swift */; };
 		F9F97C622AA9023000F12F9D /* VideoViewerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */; };
 		F9F97C642AA902AA00F12F9D /* VideoDownloadServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */; };
-		F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */; };
+		F9F97C662AA9060000F12F9D /* VideoCacheDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97C652AA9060000F12F9D /* VideoCacheDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,15 +127,15 @@
 		F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.ListFolderResult+Stub.swift"; sourceTree = "<group>"; };
 		F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.Metadata+Stub.swift"; sourceTree = "<group>"; };
 		F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutServiceMock.swift; sourceTree = "<group>"; };
-		F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByIDMock.swift; sourceTree = "<group>"; };
+		F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByIDDummy.swift; sourceTree = "<group>"; };
 		F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewModelTests.swift; sourceTree = "<group>"; };
 		F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLinkServiceMock.swift; sourceTree = "<group>"; };
 		F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.GetTemporaryLinkResult+Stub.swift"; sourceTree = "<group>"; };
 		F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataDownloadServiceMock.swift; sourceTree = "<group>"; };
-		F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByURLMock.swift; sourceTree = "<group>"; };
+		F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByURLDummy.swift; sourceTree = "<group>"; };
 		F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewerViewModelTests.swift; sourceTree = "<group>"; };
 		F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDownloadServiceMock.swift; sourceTree = "<group>"; };
-		F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheMock.swift; sourceTree = "<group>"; };
+		F9F97C652AA9060000F12F9D /* VideoCacheDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,9 +160,9 @@
 		F97ADC052AA9D00200234A63 /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
-				F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */,
-				F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */,
-				F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */,
+				F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDDummy.swift */,
+				F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLDummy.swift */,
+				F9F97C652AA9060000F12F9D /* VideoCacheDummy.swift */,
 			);
 			path = Dummy;
 			sourceTree = "<group>";
@@ -542,9 +542,9 @@
 				F9BFEAF12AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift in Sources */,
 				F9BFEAF32AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift in Sources */,
 				F97ADC092AA9D1E600234A63 /* Files.DeleteResult+Stub.swift in Sources */,
-				F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */,
-				F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */,
-				F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */,
+				F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDDummy.swift in Sources */,
+				F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLDummy.swift in Sources */,
+				F9F97C662AA9060000F12F9D /* VideoCacheDummy.swift in Sources */,
 				F9BFEAD82AA8BE84001E7E73 /* SignInViewModelTests.swift in Sources */,
 				F9BFEAD52AA8BDDF001E7E73 /* FolderContentViewModelTests.swift in Sources */,
 				F9F97C642AA902AA00F12F9D /* VideoDownloadServiceMock.swift in Sources */,

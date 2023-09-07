@@ -1,5 +1,5 @@
 //
-//  VideoCacheMock.swift
+//  VideoCacheDummy.swift
 //  dropbox-clientTests
 //
 //  Created by Anton Chuev on 06.09.2023.
@@ -8,7 +8,7 @@
 @testable import dropbox_client
 import Foundation
 
-final class VideoCacheMock: VideoCacheType {
+final class VideoCacheDummy: VideoCacheType {
     func video(for url: URL) -> URL? {
         return nil
     }

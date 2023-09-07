@@ -1,5 +1,5 @@
 //
-//  ImageCacheMock.swift
+//  ImageCacheByIDDummy.swift
 //  dropbox-clientTests
 //
 //  Created by Anton Chuev on 06.09.2023.
@@ -8,7 +8,7 @@
 @testable import dropbox_client
 import UIKit
 
-final class ImageCacheByIDMock: ImageCacheByIDType {
+final class ImageCacheByIDDummy: ImageCacheByIDType {
     
     func image(for id: String) -> UIImage? {
         return nil

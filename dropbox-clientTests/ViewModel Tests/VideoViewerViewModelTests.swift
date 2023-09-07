@@ -17,12 +17,12 @@ final class VideoViewerViewModelTests: XCTestCase {
     var entry: FileMetadata!
     var contentLinkService: ContentLinkServiceMock!
     var videoDownloadService: VideoDownloadServiceMock!
-    var videoCache: VideoCacheMock!
+    var videoCache: VideoCacheDummy!
     
     override func setUp() {
         contentLinkService = ContentLinkServiceMock()
         videoDownloadService = VideoDownloadServiceMock()
-        videoCache = VideoCacheMock()
+        videoCache = VideoCacheDummy()
         
         entry = Files.FileMetadata.videoStub().toFileMetadata()
         

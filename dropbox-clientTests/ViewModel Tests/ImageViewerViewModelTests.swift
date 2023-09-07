@@ -15,12 +15,12 @@ final class ImageViewerViewModelTests: XCTestCase {
     var entry: FileMetadata!
     var contentLinkService: ContentLinkServiceMock!
     var imageDataDownloadService: ImageDataDownloadServiceMock!
-    var imageCache: ImageCacheByURLMock!
+    var imageCache: ImageCacheByURLDummy!
     
     override func setUp() {
         contentLinkService = ContentLinkServiceMock()
         imageDataDownloadService = ImageDataDownloadServiceMock()
-        imageCache = ImageCacheByURLMock()
+        imageCache = ImageCacheByURLDummy()
         
         entry = Files.FileMetadata.photoStub().toFileMetadata()
         
