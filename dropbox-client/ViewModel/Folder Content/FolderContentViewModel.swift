@@ -86,6 +86,7 @@ final class FolderContentViewModel {
             if let _ = error {
                 self?.errorMessage.value = "Fail deleting entry"
             } else {
+                // TODO: Clean cache if needed for deleted entry
                 self?.entries.remove(at: index)
                 self?.deletedEntryIndex.value = index
             }
