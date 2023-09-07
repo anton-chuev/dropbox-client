@@ -22,3 +22,34 @@ Key advantages of MVVM are:
 - binding mechanism and other
 
 MVC and MVP patterns fit this applications needs as well. 
+
+## Features
+- sign in by Dropbox API
+- show root folder's content
+- photo viewer
+- "in memory" thumbnails and image caching
+- video player
+- "on disk" caching video
+- photo and video details
+- pagination
+- delete file via "swipe to delete" action
+
+## Missing requirements
+- UI tests
+- tests for models, image and video cache,  
+
+## Missing optional tasks
+- surfing through folder hierarchy
+- move files
+- delete multiple files
+- Adjust SDK integration
+- Pushwoosh SDK integration
+- App Tracking Transparency
+  
+## Possible enhancements
+- proper error handling with user-friendly error messages and UX
+- file viewers for other file types
+- offline mode
+- handle dark/light mode color scheme
+- extend test coverage for view models
+- UI/UX
