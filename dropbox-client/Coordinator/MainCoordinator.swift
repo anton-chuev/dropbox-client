@@ -14,11 +14,11 @@ protocol ShowingEntryDetails: AnyObject {
     func entryViewer(_ metadata: FileMetadata)
 }
 
-protocol PopingToLogin: AnyObject {
-    func popToLogin()
+protocol PopingToSignIn: AnyObject {
+    func popToSignIn()
 }
 
-class MainCoordinator: Coordinator, ShowingEntryDetails, PopingToLogin {
+class MainCoordinator: Coordinator, ShowingEntryDetails, PopingToSignIn {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     private var imageCacheByID: ImageCacheByIDType = ImageCache()
@@ -33,8 +33,8 @@ class MainCoordinator: Coordinator, ShowingEntryDetails, PopingToLogin {
         if AuthorizationStatus.isAutorized {
             showRootFolderContent()
         } else {
-            let viewModel = LoginViewModel(authService: DefaultAuthService())
-            let vc = LoginViewController.create(with: viewModel)
+            let viewModel = SignInViewModel(authService: DefaultAuthService())
+            let vc = SignInViewController.create(with: viewModel)
             navigationController.pushViewController(vc, animated: false)
         }
     }
@@ -68,13 +68,13 @@ class MainCoordinator: Coordinator, ShowingEntryDetails, PopingToLogin {
         }
     }
     
-    func popToLogin() {
+    func popToSignIn() {
         let root = navigationController.viewControllers.first
-        if root is LoginViewController {
+        if root is SignInViewController {
             navigationController.popToRootViewController(animated: true)
         } else {
-            let viewModel = LoginViewModel(authService: DefaultAuthService())
-            let vc = LoginViewController.create(with: viewModel)
+            let viewModel = SignInViewModel(authService: DefaultAuthService())
+            let vc = SignInViewController.create(with: viewModel)
             navigationController.setViewControllers([vc], animated: true)
         }
     }

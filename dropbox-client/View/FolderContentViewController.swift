@@ -15,11 +15,11 @@ final class FolderContentViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var viewModel: FolderContentViewModel!
-    private weak var coordinator: (Coordinator & ShowingEntryDetails & PopingToLogin)?
+    private weak var coordinator: (Coordinator & ShowingEntryDetails & PopingToSignIn)?
     
     // MARK: - Fabric method
     static func create(with viewModel: FolderContentViewModel,
-                       coordinator: (Coordinator & ShowingEntryDetails & PopingToLogin)) -> FolderContentViewController {
+                       coordinator: (Coordinator & ShowingEntryDetails & PopingToSignIn)) -> FolderContentViewController {
         let vc = FolderContentViewController()
         vc.viewModel = viewModel
         vc.coordinator = coordinator as? MainCoordinator
@@ -98,7 +98,7 @@ final class FolderContentViewController: UIViewController {
         }
         
         viewModel.didLogOut.bind { [weak self] loggedOut in
-            if loggedOut { self?.coordinator?.popToLogin() }
+            if loggedOut { self?.coordinator?.popToSignIn() }
         }
         
     }

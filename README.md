@@ -6,7 +6,7 @@
 
 ## Authorization
 - launch the app
-- tap "Login"
+- tap "Sign In"
 - if Dropbox app is installed, it will be launched to continue signing process
 - otherwise web form for sign in will be opened
 - enter credetials for testing to the corresponding fields and tap "Sign in"

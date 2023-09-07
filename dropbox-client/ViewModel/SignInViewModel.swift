@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  SignInViewModel.swift
 //  dropbox-client
 //
 //  Created by Anton Chuev on 01.09.2023.
@@ -7,8 +7,7 @@
 
 import UIKit
 
-final class LoginViewModel {
-    private(set) var loggedIn = Observable<Bool>(false)
+final class SignInViewModel {
     private(set) var errorMessage = Observable<String?>(nil)
     
     private var authService: AuthService

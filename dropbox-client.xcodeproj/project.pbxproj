@@ -24,9 +24,9 @@
 		F9ACD7D22AA0EDBE0005A39A /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */; };
 		F9ACD7D62AA104BE0005A39A /* ContentLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */; };
 		F9ACD7D82AA1DA660005A39A /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D72AA1DA660005A39A /* LogoutService.swift */; };
-		F9ACD7DB2AA1DCAD0005A39A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D92AA1DCAD0005A39A /* LoginViewController.swift */; };
-		F9ACD7DC2AA1DCAD0005A39A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7DA2AA1DCAD0005A39A /* LoginViewController.xib */; };
-		F9ACD7E02AA1DF040005A39A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7DF2AA1DF040005A39A /* LoginViewModel.swift */; };
+		F9ACD7DB2AA1DCAD0005A39A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */; };
+		F9ACD7DC2AA1DCAD0005A39A /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */; };
+		F9ACD7E02AA1DF040005A39A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */; };
 		F9ACD7E22AA1EFA50005A39A /* AuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E12AA1EFA50005A39A /* AuthorizationStatus.swift */; };
 		F9ACD7E72AA1F5740005A39A /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E62AA1F5740005A39A /* MediaMetadata.swift */; };
 		F9ACD7E92AA1F5D80005A39A /* File.Metadata+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7E82AA1F5D80005A39A /* File.Metadata+Mapping.swift */; };
@@ -46,7 +46,7 @@
 		F9ACD80F2AA75D940005A39A /* VideoViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD80E2AA75D940005A39A /* VideoViewerViewModel.swift */; };
 		F9BFEAC32AA7751C001E7E73 /* VideoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAC22AA7751C001E7E73 /* VideoCache.swift */; };
 		F9BFEAD52AA8BDDF001E7E73 /* FolderContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */; };
-		F9BFEAD82AA8BE84001E7E73 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */; };
+		F9BFEAD82AA8BE84001E7E73 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAD72AA8BE84001E7E73 /* SignInViewModelTests.swift */; };
 		F9BFEADE2AA8C2B9001E7E73 /* AuthServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */; };
 		F9BFEAE02AA8C718001E7E73 /* FolderContentServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */; };
 		F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */; };
@@ -92,9 +92,9 @@
 		F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryCell.xib; sourceTree = "<group>"; };
 		F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLinkService.swift; sourceTree = "<group>"; };
 		F9ACD7D72AA1DA660005A39A /* LogoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
-		F9ACD7D92AA1DCAD0005A39A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F9ACD7DA2AA1DCAD0005A39A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		F9ACD7DF2AA1DF040005A39A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		F9ACD7E12AA1EFA50005A39A /* AuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStatus.swift; sourceTree = "<group>"; };
 		F9ACD7E62AA1F5740005A39A /* MediaMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadata.swift; sourceTree = "<group>"; };
 		F9ACD7E82AA1F5D80005A39A /* File.Metadata+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File.Metadata+Mapping.swift"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		F9BFEAC22AA7751C001E7E73 /* VideoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCache.swift; sourceTree = "<group>"; };
 		F9BFEACB2AA8BCAC001E7E73 /* dropbox-clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dropbox-clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentViewModelTests.swift; sourceTree = "<group>"; };
-		F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		F9BFEAD72AA8BE84001E7E73 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
 		F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceMock.swift; sourceTree = "<group>"; };
 		F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentServiceMock.swift; sourceTree = "<group>"; };
 		F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.ListFolderResult+Stub.swift"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		F9A9EC082AA90CDD006BD16A /* ViewModel Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F9BFEAD72AA8BE84001E7E73 /* LoginViewModelTests.swift */,
+				F9BFEAD72AA8BE84001E7E73 /* SignInViewModelTests.swift */,
 				F9BFEAD42AA8BDDF001E7E73 /* FolderContentViewModelTests.swift */,
 				F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */,
 				F9F97C612AA9023000F12F9D /* VideoViewerViewModelTests.swift */,
@@ -211,8 +211,8 @@
 		F9ACD7B52AA09C290005A39A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F9ACD7D92AA1DCAD0005A39A /* LoginViewController.swift */,
-				F9ACD7DA2AA1DCAD0005A39A /* LoginViewController.xib */,
+				F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */,
+				F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */,
 				F9ACD7BF2AA0A2FF0005A39A /* FolderContentViewController.swift */,
 				F9ACD7C02AA0A2FF0005A39A /* FolderContentViewController.xib */,
 				F9ACD7CF2AA0EDBE0005A39A /* EntryCell.swift */,
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F9ACD7B12AA09B890005A39A /* Observable.swift */,
-				F9ACD7DF2AA1DF040005A39A /* LoginViewModel.swift */,
+				F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */,
 				F9ACD7B32AA09C070005A39A /* FolderContentViewModel.swift */,
 				F9ACD7F82AA4C2C40005A39A /* EntryCellViewModel.swift */,
 				F9ACD8062AA737790005A39A /* ImageViewerViewModel.swift */,
@@ -400,7 +400,7 @@
 				F9ACD7A02A9F9B480005A39A /* LaunchScreen.storyboard in Resources */,
 				F9ACD7D22AA0EDBE0005A39A /* EntryCell.xib in Resources */,
 				F9ACD8052AA735FC0005A39A /* ImageViewerViewController.xib in Resources */,
-				F9ACD7DC2AA1DCAD0005A39A /* LoginViewController.xib in Resources */,
+				F9ACD7DC2AA1DCAD0005A39A /* SignInViewController.xib in Resources */,
 				F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */,
 				F9ACD7C22AA0A2FF0005A39A /* FolderContentViewController.xib in Resources */,
 			);
@@ -429,7 +429,7 @@
 				F9ACD7E22AA1EFA50005A39A /* AuthorizationStatus.swift in Sources */,
 				F9ACD80F2AA75D940005A39A /* VideoViewerViewModel.swift in Sources */,
 				F9ACD7C42AA0A4AD0005A39A /* MainCoordinator.swift in Sources */,
-				F9ACD7DB2AA1DCAD0005A39A /* LoginViewController.swift in Sources */,
+				F9ACD7DB2AA1DCAD0005A39A /* SignInViewController.swift in Sources */,
 				F9ACD7B22AA09B890005A39A /* Observable.swift in Sources */,
 				F9ACD7FF2AA5EB030005A39A /* ImageCache.swift in Sources */,
 				F9ACD7EB2AA21D520005A39A /* ImageDataDownloadService.swift in Sources */,
@@ -449,7 +449,7 @@
 				F9ACD7F72AA3982D0005A39A /* VideoDownloadService.swift in Sources */,
 				F9ACD7F52AA34F1F0005A39A /* MetadataService.swift in Sources */,
 				F9ACD7CC2AA0B0480005A39A /* AuthService.swift in Sources */,
-				F9ACD7E02AA1DF040005A39A /* LoginViewModel.swift in Sources */,
+				F9ACD7E02AA1DF040005A39A /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +462,7 @@
 				F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */,
 				F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */,
 				F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */,
-				F9BFEAD82AA8BE84001E7E73 /* LoginViewModelTests.swift in Sources */,
+				F9BFEAD82AA8BE84001E7E73 /* SignInViewModelTests.swift in Sources */,
 				F9BFEAD52AA8BDDF001E7E73 /* FolderContentViewModelTests.swift in Sources */,
 				F9F97C642AA902AA00F12F9D /* VideoDownloadServiceMock.swift in Sources */,
 				F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */,
