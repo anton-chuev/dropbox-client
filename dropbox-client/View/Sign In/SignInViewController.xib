@@ -20,12 +20,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sba-IX-COE">
-                    <rect key="frame" x="151.66666666666666" y="733" width="90" height="35"/>
+                    <rect key="frame" x="50" y="718" width="293" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="90" id="i4Q-3I-JfU"/>
+                        <constraint firstAttribute="height" constant="50" id="pje-Xv-DTi"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Sign In"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="signInTappedWithSender:" destination="-1" eventType="touchUpInside" id="kAn-hP-1x1"/>
                     </connections>
@@ -34,8 +36,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sba-IX-COE" secondAttribute="trailing" constant="50" id="RqT-0p-FVb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sba-IX-COE" secondAttribute="bottom" constant="50" id="ZNe-Dz-JUg"/>
                 <constraint firstItem="sba-IX-COE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qh7-Og-mrt"/>
+                <constraint firstItem="sba-IX-COE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="uUi-qY-VSt"/>
             </constraints>
             <point key="canvasLocation" x="-153" y="-12"/>
         </view>
