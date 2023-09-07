@@ -23,7 +23,7 @@
 		F9ACD7D12AA0EDBE0005A39A /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7CF2AA0EDBE0005A39A /* EntryCell.swift */; };
 		F9ACD7D22AA0EDBE0005A39A /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */; };
 		F9ACD7D62AA104BE0005A39A /* ContentLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */; };
-		F9ACD7D82AA1DA660005A39A /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D72AA1DA660005A39A /* LogoutService.swift */; };
+		F9ACD7D82AA1DA660005A39A /* SignOutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D72AA1DA660005A39A /* SignOutService.swift */; };
 		F9ACD7DB2AA1DCAD0005A39A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */; };
 		F9ACD7DC2AA1DCAD0005A39A /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */; };
 		F9ACD7E02AA1DF040005A39A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */; };
@@ -51,7 +51,7 @@
 		F9BFEAE02AA8C718001E7E73 /* FolderContentServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */; };
 		F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */; };
 		F9BFEAE72AA8C93C001E7E73 /* Files.Metadata+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */; };
-		F9BFEAE92AA8DA31001E7E73 /* LogoutServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */; };
+		F9BFEAE92AA8DA31001E7E73 /* SignOutServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */; };
 		F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */; };
 		F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */; };
 		F9BFEAEF2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */; };
@@ -91,7 +91,7 @@
 		F9ACD7CF2AA0EDBE0005A39A /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryCell.xib; sourceTree = "<group>"; };
 		F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLinkService.swift; sourceTree = "<group>"; };
-		F9ACD7D72AA1DA660005A39A /* LogoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
+		F9ACD7D72AA1DA660005A39A /* SignOutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutService.swift; sourceTree = "<group>"; };
 		F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentServiceMock.swift; sourceTree = "<group>"; };
 		F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.ListFolderResult+Stub.swift"; sourceTree = "<group>"; };
 		F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.Metadata+Stub.swift"; sourceTree = "<group>"; };
-		F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutServiceMock.swift; sourceTree = "<group>"; };
+		F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutServiceMock.swift; sourceTree = "<group>"; };
 		F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheByIDMock.swift; sourceTree = "<group>"; };
 		F9BFEAEC2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewModelTests.swift; sourceTree = "<group>"; };
 		F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLinkServiceMock.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				F9ACD7CB2AA0B0480005A39A /* AuthService.swift */,
-				F9ACD7D72AA1DA660005A39A /* LogoutService.swift */,
+				F9ACD7D72AA1DA660005A39A /* SignOutService.swift */,
 				F9ACD7AE2AA092310005A39A /* FolderContentService.swift */,
 				F9ACD7FA2AA4C34E0005A39A /* ThumbnailService.swift */,
 				F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */,
@@ -288,7 +288,7 @@
 			children = (
 				F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */,
 				F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */,
-				F9BFEAE82AA8DA31001E7E73 /* LogoutServiceMock.swift */,
+				F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */,
 				F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */,
 				F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */,
 				F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */,
@@ -424,7 +424,7 @@
 				F9ACD7F92AA4C2C40005A39A /* EntryCellViewModel.swift in Sources */,
 				F9BFEAC32AA7751C001E7E73 /* VideoCache.swift in Sources */,
 				F9ACD7AF2AA092310005A39A /* FolderContentService.swift in Sources */,
-				F9ACD7D82AA1DA660005A39A /* LogoutService.swift in Sources */,
+				F9ACD7D82AA1DA660005A39A /* SignOutService.swift in Sources */,
 				F9ACD7D12AA0EDBE0005A39A /* EntryCell.swift in Sources */,
 				F9ACD7E22AA1EFA50005A39A /* AuthorizationStatus.swift in Sources */,
 				F9ACD80F2AA75D940005A39A /* VideoViewerViewModel.swift in Sources */,
@@ -468,7 +468,7 @@
 				F9BFEAE32AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift in Sources */,
 				F9BFEAE02AA8C718001E7E73 /* FolderContentServiceMock.swift in Sources */,
 				F9BFEAEF2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift in Sources */,
-				F9BFEAE92AA8DA31001E7E73 /* LogoutServiceMock.swift in Sources */,
+				F9BFEAE92AA8DA31001E7E73 /* SignOutServiceMock.swift in Sources */,
 				F9BFEADE2AA8C2B9001E7E73 /* AuthServiceMock.swift in Sources */,
 				F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */,
 				F9F97C622AA9023000F12F9D /* VideoViewerViewModelTests.swift in Sources */,

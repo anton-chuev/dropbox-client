@@ -32,7 +32,7 @@ final class FolderContentViewController: UIViewController {
         super.viewDidLoad()
         title = "Files"
         
-        navigationItem.rightBarButtonItem = logoutBarButton()
+        navigationItem.rightBarButtonItem = signOutBarButton()
         navigationItem.setHidesBackButton(true, animated: false)
         
         tableView.delegate = self
@@ -97,8 +97,8 @@ final class FolderContentViewController: UIViewController {
             }
         }
         
-        viewModel.didLogOut.bind { [weak self] loggedOut in
-            if loggedOut { self?.coordinator?.popToSignIn() }
+        viewModel.didSignOut.bind { [weak self] signedOut in
+            if signedOut { self?.coordinator?.popToSignIn() }
         }
         
     }
@@ -108,19 +108,19 @@ final class FolderContentViewController: UIViewController {
         viewModel.fetchContent()
     }
     
-    @objc private func logoutTapped() {
-        viewModel.logout()
+    @objc private func signOutTapped() {
+        viewModel.signOut()
     }
     
     private func isLoadingCell(for indexPath: IndexPath) -> Bool {
         return viewModel.hasMore && indexPath.row >= viewModel.currentCount
     }
     
-    private func logoutBarButton() -> UIBarButtonItem {
-        let logOutButton = UIButton(type: .custom)
-        logOutButton.setImage(UIImage(systemName: "rectangle.portrait.and.arrow.right"), for: .normal)
-        logOutButton.addTarget(self, action:#selector(logoutTapped), for: .touchUpInside)
-        return UIBarButtonItem(customView: logOutButton)
+    private func signOutBarButton() -> UIBarButtonItem {
+        let signOutButton = UIButton(type: .custom)
+        signOutButton.setImage(UIImage(systemName: "rectangle.portrait.and.arrow.right"), for: .normal)
+        signOutButton.addTarget(self, action:#selector(signOutTapped), for: .touchUpInside)
+        return UIBarButtonItem(customView: signOutButton)
     }
 }
 

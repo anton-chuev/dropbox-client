@@ -12,14 +12,14 @@ final class FolderContentViewModelTests: XCTestCase {
     
     var vm: FolderContentViewModel!
     var fetchService: FolderContentServiceMock!
-    var logoutService: LogoutServiceMock!
+    var signOutService: SignOutServiceMock!
     var thumbnailsCache: ImageCacheByIDMock!
     
     override func setUp() {
         fetchService = FolderContentServiceMock()
-        logoutService = LogoutServiceMock()
+        signOutService = SignOutServiceMock()
         thumbnailsCache = ImageCacheByIDMock()
-        vm = FolderContentViewModel(fetchService: fetchService, logoutService: logoutService, thumbnailsCache: thumbnailsCache)
+        vm = FolderContentViewModel(fetchService: fetchService, signOutService: signOutService, thumbnailsCache: thumbnailsCache)
     }
     
     func test_fetch_folder_content_should_succeed() {
@@ -62,12 +62,12 @@ final class FolderContentViewModelTests: XCTestCase {
         XCTAssertNotNil(vm.errorMessage.value)
     }
     
-    func test_logout_should_be_called() {
-        XCTAssertEqual(logoutService.logoutGotCalled, false)
+    func test_signout_should_be_called() {
+        XCTAssertEqual(signOutService.signOutGotCalled, false)
         
-        vm.logout()
+        vm.signOut()
         
-        XCTAssertEqual(logoutService.logoutGotCalled, true)
+        XCTAssertEqual(signOutService.signOutGotCalled, true)
     }
     
 }

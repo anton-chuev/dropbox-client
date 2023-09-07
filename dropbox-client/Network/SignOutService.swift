@@ -1,5 +1,5 @@
 //
-//  LogoutService.swift
+//  SignOutService.swift
 //  dropbox-client
 //
 //  Created by Anton Chuev on 01.09.2023.
@@ -7,12 +7,12 @@
 
 import SwiftyDropbox
 
-protocol LogoutService {
-    func logout()
+protocol SignOutService {
+    func signOut()
 }
 
-struct DefaultLogoutService: LogoutService {
-    func logout() {
+struct DefaultSignOutService: SignOutService {
+    func signOut() {
         DropboxClientsManager.unlinkClients()
     }
 }

@@ -12,7 +12,7 @@ final class FolderContentViewModel {
     // MARK: - Observables
     private(set) var newEntries = Observable<[Metadata]>([])
     private(set) var errorMessage = Observable<String?>(nil)
-    private(set) var didLogOut = Observable<Bool>(false)
+    private(set) var didSignOut = Observable<Bool>(false)
     private(set) var firstPageIsLoading = Observable<Bool>(false)
     
     // MARK: - Readonly properties
@@ -22,7 +22,7 @@ final class FolderContentViewModel {
     // MARK: - Private properties
     private var entries = [Metadata]()
     private var fetchService: FolderContentService
-    private var logoutService: LogoutService
+    private var signOutService: SignOutService
     private var currentPath = ""
     private var isFetchingInProgress = false
     private let pageLimit: UInt32 = 20
@@ -31,10 +31,10 @@ final class FolderContentViewModel {
     private var viewIsPopulated = false
     
     init(fetchService: FolderContentService,
-         logoutService: LogoutService,
+         signOutService: SignOutService,
          thumbnailsCache: ImageCacheByIDType) {
         self.fetchService = fetchService
-        self.logoutService = logoutService
+        self.signOutService = signOutService
         self.thumbnailCache = thumbnailsCache
     }
     
@@ -73,10 +73,10 @@ final class FolderContentViewModel {
         }
     }
     
-    func logout() {
+    func signOut() {
         thumbnailCache.removeAllImages()
-        logoutService.logout()
-        didLogOut.value = true
+        signOutService.signOut()
+        didSignOut.value = true
     }
     
     // MARK: - Helpers
