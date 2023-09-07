@@ -32,12 +32,22 @@
                         <action selector="signInTappedWithSender:" destination="-1" eventType="touchUpInside" id="kAn-hP-1x1"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2sp-Gs-rFQ">
+                    <rect key="frame" x="50" y="109" width="293" height="293"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2sp-Gs-rFQ" secondAttribute="height" multiplier="1:1" id="NER-Yl-xcd"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="2sp-Gs-rFQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="JXc-ZD-nf1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sba-IX-COE" secondAttribute="trailing" constant="50" id="RqT-0p-FVb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sba-IX-COE" secondAttribute="bottom" constant="50" id="ZNe-Dz-JUg"/>
+                <constraint firstItem="2sp-Gs-rFQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h3a-Ma-t1y"/>
+                <constraint firstAttribute="trailing" secondItem="2sp-Gs-rFQ" secondAttribute="trailing" constant="50" id="iIj-3m-D0Z"/>
+                <constraint firstItem="2sp-Gs-rFQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="oVD-DW-btz"/>
                 <constraint firstItem="sba-IX-COE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qh7-Og-mrt"/>
                 <constraint firstItem="sba-IX-COE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="uUi-qY-VSt"/>
             </constraints>
@@ -45,6 +55,7 @@
         </view>
     </objects>
     <resources>
+        <image name="logo" width="1200" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
