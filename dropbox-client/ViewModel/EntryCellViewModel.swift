@@ -26,7 +26,7 @@ final class EntryCellViewModel {
     func initialSetup() {
         entryName.value = metadata.name
         let image = metadata.isFolder ? UIImage(systemName: "folder.circle") : UIImage(systemName: "photo.circle")
-        imageData.value = image?.withTintColor(.blue, renderingMode: .alwaysTemplate).pngData()
+        imageData.value = image?.withTintColor(.lightGray, renderingMode: .alwaysTemplate).pngData()
     }
     
     func getThumbnail() {
