@@ -83,7 +83,7 @@ final class FolderContentViewModel {
             return
         }
         deleteEntryService.delete(at: path) { [weak self] result, error in
-            if let error = error {
+            if let _ = error {
                 self?.errorMessage.value = "Fail deleting entry"
             } else {
                 self?.entries.remove(at: index)
