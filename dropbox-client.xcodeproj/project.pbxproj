@@ -167,6 +167,77 @@
 			path = Dummy;
 			sourceTree = "<group>";
 		};
+		F97ADC0C2AA9DB5900234A63 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */,
+				F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		F97ADC0D2AA9DB6700234A63 /* Folder Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7BF2AA0A2FF0005A39A /* FolderContentViewController.swift */,
+				F9ACD7C02AA0A2FF0005A39A /* FolderContentViewController.xib */,
+				F9ACD7CF2AA0EDBE0005A39A /* EntryCell.swift */,
+				F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */,
+			);
+			path = "Folder Content";
+			sourceTree = "<group>";
+		};
+		F97ADC0E2AA9DB7800234A63 /* Image Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD8022AA735FC0005A39A /* ImageViewerViewController.swift */,
+				F9ACD8032AA735FC0005A39A /* ImageViewerViewController.xib */,
+			);
+			path = "Image Viewer";
+			sourceTree = "<group>";
+		};
+		F97ADC0F2AA9DB9700234A63 /* Video Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD80A2AA75D390005A39A /* VideoViewerViewController.swift */,
+				F9ACD80B2AA75D390005A39A /* VideoViewerViewController.xib */,
+			);
+			path = "Video Viewer";
+			sourceTree = "<group>";
+		};
+		F97ADC102AA9DBDE00234A63 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		F97ADC112AA9DBEC00234A63 /* Folder Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD7B32AA09C070005A39A /* FolderContentViewModel.swift */,
+				F9ACD7F82AA4C2C40005A39A /* EntryCellViewModel.swift */,
+			);
+			path = "Folder Content";
+			sourceTree = "<group>";
+		};
+		F97ADC122AA9DBFE00234A63 /* Image Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD8062AA737790005A39A /* ImageViewerViewModel.swift */,
+			);
+			path = "Image Viewer";
+			sourceTree = "<group>";
+		};
+		F97ADC132AA9DC0800234A63 /* Video Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACD80E2AA75D940005A39A /* VideoViewerViewModel.swift */,
+			);
+			path = "Video Viewer";
+			sourceTree = "<group>";
+		};
 		F9A9EC082AA90CDD006BD16A /* ViewModel Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,16 +298,10 @@
 		F9ACD7B52AA09C290005A39A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F9ACD7D92AA1DCAD0005A39A /* SignInViewController.swift */,
-				F9ACD7DA2AA1DCAD0005A39A /* SignInViewController.xib */,
-				F9ACD7BF2AA0A2FF0005A39A /* FolderContentViewController.swift */,
-				F9ACD7C02AA0A2FF0005A39A /* FolderContentViewController.xib */,
-				F9ACD7CF2AA0EDBE0005A39A /* EntryCell.swift */,
-				F9ACD7D02AA0EDBE0005A39A /* EntryCell.xib */,
-				F9ACD8022AA735FC0005A39A /* ImageViewerViewController.swift */,
-				F9ACD8032AA735FC0005A39A /* ImageViewerViewController.xib */,
-				F9ACD80A2AA75D390005A39A /* VideoViewerViewController.swift */,
-				F9ACD80B2AA75D390005A39A /* VideoViewerViewController.xib */,
+				F97ADC0C2AA9DB5900234A63 /* Sign In */,
+				F97ADC0D2AA9DB6700234A63 /* Folder Content */,
+				F97ADC0E2AA9DB7800234A63 /* Image Viewer */,
+				F97ADC0F2AA9DB9700234A63 /* Video Viewer */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,11 +310,10 @@
 			isa = PBXGroup;
 			children = (
 				F9ACD7B12AA09B890005A39A /* Observable.swift */,
-				F9ACD7DF2AA1DF040005A39A /* SignInViewModel.swift */,
-				F9ACD7B32AA09C070005A39A /* FolderContentViewModel.swift */,
-				F9ACD7F82AA4C2C40005A39A /* EntryCellViewModel.swift */,
-				F9ACD8062AA737790005A39A /* ImageViewerViewModel.swift */,
-				F9ACD80E2AA75D940005A39A /* VideoViewerViewModel.swift */,
+				F97ADC102AA9DBDE00234A63 /* Sign In */,
+				F97ADC112AA9DBEC00234A63 /* Folder Content */,
+				F97ADC122AA9DBFE00234A63 /* Image Viewer */,
+				F97ADC132AA9DC0800234A63 /* Video Viewer */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
