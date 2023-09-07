@@ -77,7 +77,7 @@ final class VideoViewerViewModelTests: XCTestCase {
         XCTAssertEqual(videoDownloadService.downloadVideoGotCalled, true)
     }
     
-    func test_download_image_should_succeed() {
+    func test_download_video_should_succeed() {
         XCTAssertNil(vm.playerItem.value)
         
         vm.fetchData()

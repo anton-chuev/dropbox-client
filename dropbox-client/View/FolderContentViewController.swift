@@ -40,6 +40,9 @@ final class FolderContentViewController: UIViewController {
         tableView.register(EntryCell.nib, forCellReuseIdentifier: EntryCell.reusableIdentifier)
         tableView.isHidden = true
         
+        // Remove the extra empty cell divider lines
+        tableView.tableFooterView = UIView()
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(loadFirstPage), for: .valueChanged)
         tableView.refreshControl = refreshControl
@@ -97,6 +100,13 @@ final class FolderContentViewController: UIViewController {
             }
         }
         
+        viewModel.deletedEntryIndex.bind { [weak self] index in
+            guard let index = index else { return }
+            self?.tableView.beginUpdates()
+            self?.tableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .fade)
+            self?.tableView.endUpdates()
+        }
+        
         viewModel.didSignOut.bind { [weak self] signedOut in
             if signedOut { self?.coordinator?.popToSignIn() }
         }
@@ -151,6 +161,12 @@ extension FolderContentViewController: UITableViewDataSource {
         if isLoadingCell(for: indexPath) { viewModel.fetchContent() }
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        guard editingStyle == .delete else { return }
+        viewModel.deleteEntry(at: indexPath.row)
+    }
+    
 }
 
 extension FolderContentViewController: UITableViewDelegate {
@@ -168,7 +184,7 @@ extension FolderContentViewController: UITableViewDelegate {
         let entry = viewModel.entry(at: indexPath.row)
         if let file = entry as? FileMetadata {
             coordinator?.entryViewer(file)
-        } else if let folder = entry as? FolderMetadata {
+        } else if let _ = entry as? FolderMetadata {
             // TODO: Show selected folder's content
         }
     }

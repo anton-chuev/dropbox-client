@@ -42,6 +42,7 @@ class MainCoordinator: Coordinator, ShowingEntryDetails, PopingToSignIn {
     func showRootFolderContent() {
         let viewModel =
         FolderContentViewModel(fetchService: DefaultFolderContentService(),
+                               deleteEntryService: DefaultDeleteEnryService(),
                                signOutService: DefaultSignOutService(),
                                thumbnailsCache: imageCacheByID)
         let vc = FolderContentViewController.create(with: viewModel, coordinator: self)

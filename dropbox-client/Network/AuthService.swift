@@ -22,7 +22,7 @@ struct DefaultAuthService: AuthService {
                 UIApplication.shared.open(url)
             },
             scopeRequest: ScopeRequest(scopeType: .user,
-                                       scopes: ["files.metadata.read", "files.content.read"],
+                                       scopes: ["files.metadata.read", "files.content.read",           "files.content.write"],
                                        includeGrantedScopes: false))
     }
 }

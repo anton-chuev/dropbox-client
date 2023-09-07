@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F97ADC042AA9C66700234A63 /* DeleteEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ADC032AA9C66700234A63 /* DeleteEntryService.swift */; };
+		F97ADC072AA9D05F00234A63 /* DeleteEntryServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ADC062AA9D05F00234A63 /* DeleteEntryServiceMock.swift */; };
+		F97ADC092AA9D1E600234A63 /* Files.DeleteResult+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ADC082AA9D1E600234A63 /* Files.DeleteResult+Stub.swift */; };
 		F9ACD7942A9F9B450005A39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7932A9F9B450005A39A /* AppDelegate.swift */; };
 		F9ACD7962A9F9B450005A39A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACD7952A9F9B450005A39A /* SceneDelegate.swift */; };
 		F9ACD79D2A9F9B480005A39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9ACD79C2A9F9B480005A39A /* Assets.xcassets */; };
@@ -74,6 +77,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F97ADC032AA9C66700234A63 /* DeleteEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEntryService.swift; sourceTree = "<group>"; };
+		F97ADC062AA9D05F00234A63 /* DeleteEntryServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEntryServiceMock.swift; sourceTree = "<group>"; };
+		F97ADC082AA9D1E600234A63 /* Files.DeleteResult+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Files.DeleteResult+Stub.swift"; sourceTree = "<group>"; };
 		F9ACD7902A9F9B450005A39A /* dropbox-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dropbox-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ACD7932A9F9B450005A39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9ACD7952A9F9B450005A39A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +157,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97ADC052AA9D00200234A63 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */,
+				F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */,
+				F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
 		F9A9EC082AA90CDD006BD16A /* ViewModel Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +260,7 @@
 				F9ACD7CB2AA0B0480005A39A /* AuthService.swift */,
 				F9ACD7D72AA1DA660005A39A /* SignOutService.swift */,
 				F9ACD7AE2AA092310005A39A /* FolderContentService.swift */,
+				F97ADC032AA9C66700234A63 /* DeleteEntryService.swift */,
 				F9ACD7FA2AA4C34E0005A39A /* ThumbnailService.swift */,
 				F9ACD7D52AA104BE0005A39A /* ContentLinkService.swift */,
 				F9ACD7F42AA34F1F0005A39A /* MetadataService.swift */,
@@ -276,6 +293,7 @@
 		F9BFEACC2AA8BCAC001E7E73 /* dropbox-clientTests */ = {
 			isa = PBXGroup;
 			children = (
+				F97ADC052AA9D00200234A63 /* Dummy */,
 				F9BFEAE12AA8C83F001E7E73 /* Stub */,
 				F9BFEAD62AA8BE5E001E7E73 /* Mock */,
 				F9A9EC082AA90CDD006BD16A /* ViewModel Tests */,
@@ -288,13 +306,11 @@
 			children = (
 				F9BFEADD2AA8C2B9001E7E73 /* AuthServiceMock.swift */,
 				F9BFEADF2AA8C718001E7E73 /* FolderContentServiceMock.swift */,
+				F97ADC062AA9D05F00234A63 /* DeleteEntryServiceMock.swift */,
 				F9BFEAE82AA8DA31001E7E73 /* SignOutServiceMock.swift */,
 				F9BFEAEE2AA8E8B1001E7E73 /* ContentLinkServiceMock.swift */,
 				F9BFEAF22AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift */,
 				F9F97C632AA902AA00F12F9D /* VideoDownloadServiceMock.swift */,
-				F9BFEAEA2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift */,
-				F9BFEAF42AA8EE10001E7E73 /* ImageCacheByURLMock.swift */,
-				F9F97C652AA9060000F12F9D /* VideoCacheMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -305,6 +321,7 @@
 				F9BFEAE62AA8C93C001E7E73 /* Files.Metadata+Stub.swift */,
 				F9BFEAE22AA8C85E001E7E73 /* Files.ListFolderResult+Stub.swift */,
 				F9BFEAF02AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift */,
+				F97ADC082AA9D1E600234A63 /* Files.DeleteResult+Stub.swift */,
 			);
 			path = Stub;
 			sourceTree = "<group>";
@@ -450,6 +467,7 @@
 				F9ACD7F52AA34F1F0005A39A /* MetadataService.swift in Sources */,
 				F9ACD7CC2AA0B0480005A39A /* AuthService.swift in Sources */,
 				F9ACD7E02AA1DF040005A39A /* SignInViewModel.swift in Sources */,
+				F97ADC042AA9C66700234A63 /* DeleteEntryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +477,7 @@
 			files = (
 				F9BFEAF12AA8EA79001E7E73 /* Files.GetTemporaryLinkResult+Stub.swift in Sources */,
 				F9BFEAF32AA8EBE9001E7E73 /* ImageDataDownloadServiceMock.swift in Sources */,
+				F97ADC092AA9D1E600234A63 /* Files.DeleteResult+Stub.swift in Sources */,
 				F9BFEAEB2AA8DB7A001E7E73 /* ImageCacheByIDMock.swift in Sources */,
 				F9BFEAF52AA8EE10001E7E73 /* ImageCacheByURLMock.swift in Sources */,
 				F9F97C662AA9060000F12F9D /* VideoCacheMock.swift in Sources */,
@@ -473,6 +492,7 @@
 				F9BFEAED2AA8E83A001E7E73 /* ImageViewerViewModelTests.swift in Sources */,
 				F9F97C622AA9023000F12F9D /* VideoViewerViewModelTests.swift in Sources */,
 				F9BFEAE72AA8C93C001E7E73 /* Files.Metadata+Stub.swift in Sources */,
+				F97ADC072AA9D05F00234A63 /* DeleteEntryServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

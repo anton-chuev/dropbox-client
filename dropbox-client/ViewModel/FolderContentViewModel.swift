@@ -14,6 +14,7 @@ final class FolderContentViewModel {
     private(set) var errorMessage = Observable<String?>(nil)
     private(set) var didSignOut = Observable<Bool>(false)
     private(set) var firstPageIsLoading = Observable<Bool>(false)
+    private(set) var deletedEntryIndex = Observable<Int?>(nil)
     
     // MARK: - Readonly properties
     private(set) var hasMore = true
@@ -22,6 +23,7 @@ final class FolderContentViewModel {
     // MARK: - Private properties
     private var entries = [Metadata]()
     private var fetchService: FolderContentService
+    private var deleteEntryService: DeleteEntryService
     private var signOutService: SignOutService
     private var currentPath = ""
     private var isFetchingInProgress = false
@@ -31,9 +33,11 @@ final class FolderContentViewModel {
     private var viewIsPopulated = false
     
     init(fetchService: FolderContentService,
+         deleteEntryService: DeleteEntryService,
          signOutService: SignOutService,
          thumbnailsCache: ImageCacheByIDType) {
         self.fetchService = fetchService
+        self.deleteEntryService = deleteEntryService
         self.signOutService = signOutService
         self.thumbnailCache = thumbnailsCache
     }
@@ -69,6 +73,21 @@ final class FolderContentViewModel {
                     self?.fetchCompleted(response)
                 }
                 self?.isFetchingInProgress = false
+            }
+        }
+    }
+    
+    func deleteEntry(at index: Int) {
+        let entry = entry(at: index)
+        guard let path = entry.pathLower else {
+            return
+        }
+        deleteEntryService.delete(at: path) { [weak self] result, error in
+            if let error = error {
+                self?.errorMessage.value = "Fail deleting entry"
+            } else {
+                self?.entries.remove(at: index)
+                self?.deletedEntryIndex.value = index
             }
         }
     }
